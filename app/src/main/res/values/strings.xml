@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyTopTenLists</string>
+    <string name="title_activity_top_lists">TopListsActivity</string>
+</resources>
