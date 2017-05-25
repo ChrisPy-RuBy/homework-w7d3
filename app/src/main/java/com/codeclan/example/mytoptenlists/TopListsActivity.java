@@ -2,6 +2,7 @@ package com.codeclan.example.mytoptenlists;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,8 @@ public class TopListsActivity extends AppCompatActivity {
         ArrayList<List> list = topLists.getList();
 
         TopListsAdapter listsAdapter = new TopListsAdapter(this, list);
+        ListView listView =  (ListView) findViewById(R.id.list);
+        listView.setAdapter(listsAdapter);
     }
 }
 
